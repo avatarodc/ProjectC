@@ -155,95 +155,14 @@ void afficher_menu_admin(const char* nom_fichier, Utilisateur user) {
     int choix;
     scanf("%d", &choix);
     switch (choix) {
-        /* case 1:
+        case 1:
             printf("Gestion des étudiants\n");
-            printf("LISTER ETUDIANTS\n");
-            lister_etudiants_classe("apprenants.txt", "ClasseA");
-            printf("\n");
-            printf("listes des etutudiants de la classe B\n");
-            lister_etudiants_classe("apprenants.txt", "ClasseB");
-            printf("\n");
-            printf("listes des etutudiants de la classe C\n");
-            lister_etudiants_classe("apprenants.txt", "ClasseC");
-            lister_classes("classes.txt");
-            printf("AFFICHER PRESENCES\n");
-            afficher_presences_classe("absences.txt", "ClasseA");
-            printf("la liste de presences des etudiants\n");
-            afficher_presences_classe("absences.txt", "ClasseB");
-            printf("la liste de presences des etudiants\n");
-            afficher_presences_classe("absences.txt", "ClasseC");
-            printf("la liste de presences des etudiants\n");
             break;
-        case 2: */
+        case 2:
             printf("Génération de fichiers\n");
             break;
         case 3:
             printf("Marquer les présences\n");
-            
-            int id_apprenant , classe ;
-            printf("Marquer la presence de l'apprenant\n");
-            printf("1 - REFDIJ\n");
-            printf("2 - DEVWEB\n");
-            printf("3 - DATA\n");
-            printf("4 - LISTE DES PRESENCES\n");
-            printf("CHOISIR UNE CLASSE\n");
-            scanf("%d",&classe);
-           /*  switch(classe){
-                case 1 :
-                    printf("REFDIJ  teste \n");
-                    lister_etudiants_classe("apprenants.txt", "ClasseA");
-                    printf("\n");
-                    // printf("Entrez l'identifiant de l'apprenant : \n");
-                    //scanf("%d", &id_apprenant);
-                    marquer_presence_apprenant("absences.txt", id_apprenant);
-                    break;
-                case 2 :
-                    lister_etudiants_classe("apprenants.txt", "ClasseB");
-                    printf("DEVWEB\n");
-                    printf("Entrez l'identifiant de l'apprenant : ");
-                    scanf("%d", &id_apprenant);
-                    marquer_presence_apprenant("absences.txt", id_apprenant);
-                    break;
-                case 3 :
-                   // lister_etudiants_classe("apprenants.txt", "ClasseC");
-                    printf("DATA\n");
-                    
-                    printf("Entrez l'identifiant de l'apprenant : ");
-                   // scanf("%d", &id_apprenant);
-                    marquer_presence_apprenant("absences.txt", id_apprenant);
-                    break;
-                case 4 :
-                int classe;
-                    printf("LISTE DES PRESENCES\n");
-                    printf("1 - REFDIJ\n");
-                    printf("2 - DEVWEB\n");
-                    printf("3 - DATA\n");
-                    printf("CHOISIR UNE CLASSE\n");
-                    scanf("%d",&classe);
-                    switch(classe){
-                        case 1 :
-                            printf("REFDIJ\n");
-                            afficher_etudiants_presence_classe("absences.txt", "ClasseA");
-                            break;
-                        case 2 :
-                            printf("DEVWEB\n");
-                            afficher_etudiants_presence_classe("absences.txt", "ClasseB");
-                            break;
-                        case 3 :
-                            printf("DATA\n");
-                            afficher_etudiants_presence_classe("absences.txt", "ClasseC");
-                            break;
-                        default :
-                            printf("ERREUR\n");
-                            break;
-                    }
-                    break;
-                default :
-                    printf("ERREUR\n");
-                    break;
-            }
-            printf("Entrez l'identifiant de l'apprenant : ");
-            scanf("%d", &id_apprenant);
             break;
         case 4:
             printf("Envoyer un message\n");
@@ -254,9 +173,7 @@ void afficher_menu_admin(const char* nom_fichier, Utilisateur user) {
         case 6:
             printf("Quitter\n");
             break;
-        default:
-            break; */
-    }
+        default:}
 }
 
 void afficher_menu_apprenant(const char* nom_fichier, Utilisateur user) {
@@ -305,12 +222,6 @@ void gerer_menu_apprenant(const char* nom_fichier, Utilisateur user) {
         printf("Connexion échouée, veuillez réessayer.\n");
     }
 }
-
-
-
-void teste();
-
-
 
 
 
