@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -21,13 +20,11 @@ int main() {
     do {
         printw("Entrez votre nom d'utilisateur : ");
         refresh();
-        getnstr(user.username, sizeof(user.username)); // Permettre à l'utilisateur de saisir le nom d'utilisateur
 
-        // Vérifier si le nom d'utilisateur contient uniquement des espaces ou des tabulations
-        if (contient_seulement_espaces(user.username)) {
-            printw("Login obligatoire.\n");
-            continue;
-        }
+        // Saisie du nom d'utilisateur
+        echo(); // Activer l'écho des caractères saisis
+        getnstr(user.username, sizeof(user.username)); // Permettre à l'utilisateur de saisir le nom d'utilisateur
+        noecho(); // Désactiver l'écho des caractères saisis
 
         printw("\n");
 
@@ -35,6 +32,7 @@ int main() {
 
         printw("Entrez votre mot de passe : ");
 
+        // Saisie du mot de passe
         int i = 0;
         char c;
         while (1) {
