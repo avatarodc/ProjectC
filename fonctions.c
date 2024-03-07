@@ -308,7 +308,7 @@ void gerer_menu_apprenant(const char* nom_fichier, Utilisateur user) {
 
 
 
-
+void teste();
 
 
 
